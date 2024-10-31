@@ -46,6 +46,7 @@ namespace Pinetime {
         Utility::DirtyValue<bool> heartbeatRunning {};
         Utility::DirtyValue<bool> notificationState {};
         Utility::DirtyValue<std::chrono::time_point<std::chrono::system_clock, std::chrono::days>> currentDate;
+        Utility::DirtyValue<uint8_t> heartbeatLast {};
 
         lv_obj_t* label_time;
         lv_obj_t* label_date;

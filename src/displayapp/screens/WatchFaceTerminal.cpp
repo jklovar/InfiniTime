@@ -142,10 +142,10 @@ void WatchFaceTerminal::Refresh() {
         lv_label_set_text_fmt(heartbeatValue, "[L_HR]#ee3311 %d bpm#", heartbeat.Get());
         heartbeatLast = heartbeat.Get();
       } else {
-        lv_label_set_text_static(heartbeatValue, "[L_HR]#ee3311 %d bpm (old)#", heartbeatLast);
+        lv_label_set_text_fmt(heartbeatValue, "[L_HR]#ee3311 %d bpm (old)#", heartbeatLast);
       }
     } else {
-      lv_label_set_text_static(heartbeatValue, "[L_HR]#ee3311 %d bpm (old)#", heartbeatLast);
+      lv_label_set_text_fmt(heartbeatValue, "[L_HR]#ee3311 %d bpm (old)#", heartbeatLast);
     }
   }
 
